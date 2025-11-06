@@ -33,7 +33,7 @@ const Navbar = () => {
 
                 <div onClick={()=>{navigate('/cart')}} className="relative cursor-pointer">
                     <img src={assets.cart_icon} alt="cart_Icon" className='w-8 opacity-90' />
-                    <button className="absolute -top-2 -right-3 text-xs text-white bg-indigo-500 w-[18px] h-[18px] rounded-full">3</button>
+                    <button className="absolute -top-2 -right-3 text-xs text-white bg-indigo-500 w-[18px] h-[18px] rounded-full">0</button>
                 </div>
 
                 { !user ? (  
@@ -78,7 +78,7 @@ const Navbar = () => {
                 </button>
                 )}
                 
-                </div>)
+            </div>) 
             }
 
         </nav>
