@@ -3,13 +3,14 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Home from './pages/Home'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import {Toaster} from 'react-hot-toast';
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
 
   const isSellerPath = useLocation().pathname.includes("seller");
 
-  <Toaster/>
+  <ToastContainer/>
   
 
   return (
@@ -20,6 +21,16 @@ const App = () => {
           <Route path='/' element={<Home/>} />
         </Routes>
       </div>
+       <ToastContainer 
+        position="top-center"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        pauseOnFocusLoss
+      />
     </div>
   )
 }
