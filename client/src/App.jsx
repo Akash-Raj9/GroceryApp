@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/' element={<Home/>} />
         </Routes>
       </div>
+      {!isSellerPath && <Footer/>}
        <ToastContainer 
         position="top-center"
         autoClose={1500}
