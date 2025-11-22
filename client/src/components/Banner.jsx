@@ -12,12 +12,12 @@ const Banner = () => {
           freshies_vegggies Grocery</h1>
       
       <div className='flex items-center mt-6 font-medium' >
-        <Link to={"/products"} className='group flex items-center gap-2 px-7 md:px 9 py-3 bg-primary hover:bg-primary-dull
+        <Link to={"/AllProducts"} className='group flex items-center gap-2 px-7 md:px 9 py-3 bg-primary hover:bg-primary-dull
           transition rounded text-white cursor-pointer' >shop now 
           <img className='md:hidden transition group-focus:translate-x-1' src={assets.white_arrow_icon} alt="arrow" />
         </Link>
 
-        <Link to={"/products"} className='group hidden md:flex items-center gap-2 px-9 py-3 cursor-pointer' >Explore Deals 
+        <Link to={"/AllProducts"} className='group hidden md:flex items-center gap-2 px-9 py-3 cursor-pointer' >Explore Deals 
           <img className='transition group-hover:trasnlate-x-1' src={assets.black_arrow_icon} alt="arrow" />
         </Link>
         
