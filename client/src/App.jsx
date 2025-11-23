@@ -1,6 +1,4 @@
-import React from 'react'
 import Navbar from './components/Navbar'
-import Banner from './components/Banner'
 import Home from './pages/Home'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import {ToastContainer} from 'react-toastify'
@@ -11,6 +9,7 @@ import Login from './components/Login'
 import AllProducts from './pages/AllProducts'
 import ProductCategory from './pages/ProductCategory'
 import ProductDetails from './pages/ProductDetails'
+import Cart from './pages/Cart'
 
 const App = () => {
 
@@ -29,6 +28,7 @@ const App = () => {
           <Route path='/Allproducts' element={<AllProducts/>} />
           <Route path='/AllProducts/:category' element={<ProductCategory/>} />
           <Route path='/AllProducts/:category/:id' element={<ProductDetails/>}/>
+          <Route path='/Cart' element={<Cart/>}/>
         </Routes>
       </div>
       {!isSellerPath && <Footer/>}
