@@ -10,3 +10,6 @@
     --color-primary-dull:#4fbf8b;
 }
 
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
