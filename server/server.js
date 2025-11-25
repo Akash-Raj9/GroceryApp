@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./configs/db.js";
 import 'dotenv/config';
+import userRouter from "./routes/UserRoute.js";
 
 
 const app = express();
@@ -26,6 +27,7 @@ app.use(cors({
 app.get('/',(req,res)=>{
     res.send("Api is working");
 })
+app.use('/api/user',userRouter)
 
 
 app.listen(port,()=>{
