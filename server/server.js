@@ -27,7 +27,8 @@ app.use(cors({
 app.get('/',(req,res)=>{
     res.send("Api is working");
 })
-app.use('/api/user',userRouter)
+
+app.use('/api/user',userRouter);
 
 
 app.listen(port,()=>{
